@@ -3,17 +3,18 @@ import { createUseStyles } from 'react-jss';
 import Alert from '../Alert/Alert';
 
 const useStyles = createUseStyles({
-  item: {
-    marginRight: 20
-  },
-    wrapper: {
-      borderTop: 'black solid 1px',
-      display: 'flex',
-      flexWrap: 'wrap',
-      '& h2': {
-        width: '100%'
-      }
+  item: {},
+  wrapper: {
+    borderTop: 'black solid 1px',
+    display: 'flex',
+    flexWrap: 'wrap',
+    '& h2': {
+      width: '100%'
+    },
+    '& $item': {
+      marginRight: 20
     }
+  }
 })
 
 const CartSuccess = () => {
